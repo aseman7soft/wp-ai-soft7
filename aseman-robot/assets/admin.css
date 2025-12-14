@@ -1,0 +1,329 @@
+/* Aseman Robot Admin Styles */
+
+/* Base Styles */
+.aseman-robot-wrap {
+    margin: 20px 20px 0 0;
+}
+
+.aseman-robot-wrap h1 {
+    margin-bottom: 20px;
+}
+
+/* RTL Support */
+body.rtl .aseman-robot-wrap {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .aseman-robot-wrap .form-table th {
+    text-align: right;
+}
+
+body.rtl .aseman-robot-wrap .form-table td {
+    text-align: right;
+}
+
+/* Tab Navigation */
+.aseman-tabs {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.aseman-tab-nav {
+    display: flex;
+    border-bottom: 1px solid #c3c4c7;
+    background: #f0f0f1;
+}
+
+.aseman-tab-btn {
+    padding: 12px 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #646970;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.aseman-tab-btn:hover {
+    color: #2271b1;
+    background: #fff;
+}
+
+.aseman-tab-btn.active {
+    color: #2271b1;
+    border-bottom-color: #2271b1;
+    background: #fff;
+}
+
+.aseman-tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.aseman-tab-content.active {
+    display: block;
+}
+
+/* Forms */
+.aseman-robot-wrap .form-table {
+    margin-top: 20px;
+}
+
+.aseman-robot-wrap .form-table th {
+    width: 200px;
+    padding: 15px 10px;
+}
+
+.aseman-robot-wrap .form-table td {
+    padding: 15px 10px;
+}
+
+.aseman-robot-wrap .regular-text {
+    width: 100%;
+    max-width: 400px;
+}
+
+.aseman-robot-wrap .large-text {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Buttons */
+.aseman-robot-wrap .button {
+    margin-right: 5px;
+}
+
+body.rtl .aseman-robot-wrap .button {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+/* Test Connection */
+#test-connection-result {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+#test-connection-result.success {
+    color: #00a32a;
+}
+
+#test-connection-result.error {
+    color: #d63638;
+}
+
+/* Queue Table */
+.wp-list-table .button-small {
+    padding: 2px 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    height: auto;
+}
+
+.wp-list-table .status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.wp-list-table .status-pending {
+    background: #f0f0f1;
+    color: #646970;
+}
+
+.wp-list-table .status-processing {
+    background: #72aee6;
+    color: #fff;
+}
+
+.wp-list-table .status-done {
+    background: #00a32a;
+    color: #fff;
+}
+
+.wp-list-table .status-failed {
+    background: #d63638;
+    color: #fff;
+}
+
+.wp-list-table .status-scheduled {
+    background: #dba617;
+    color: #fff;
+}
+
+.wp-list-table .error-message {
+    color: #d63638;
+    font-style: italic;
+    font-size: 12px;
+}
+
+/* Ajax Messages */
+#aseman-ajax-message {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+#aseman-ajax-message.success {
+    background: #d7f0db;
+    border-left: 4px solid #00a32a;
+    color: #00401a;
+}
+
+#aseman-ajax-message.error {
+    background: #f8d7da;
+    border-left: 4px solid #d63638;
+    color: #58181c;
+}
+
+/* Stats Grid */
+.aseman-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.aseman-stat-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: box-shadow 0.2s;
+}
+
+.aseman-stat-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aseman-stat-card.success {
+    border-left: 4px solid #00a32a;
+}
+
+.aseman-stat-card.warning {
+    border-left: 4px solid #dba617;
+}
+
+.aseman-stat-card.error {
+    border-left: 4px solid #d63638;
+}
+
+.aseman-stat-card.info {
+    border-left: 4px solid #72aee6;
+}
+
+.stat-icon {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    color: #646970;
+}
+
+.aseman-stat-card.success .stat-icon {
+    color: #00a32a;
+}
+
+.aseman-stat-card.warning .stat-icon {
+    color: #dba617;
+}
+
+.aseman-stat-card.error .stat-icon {
+    color: #d63638;
+}
+
+.aseman-stat-card.info .stat-icon {
+    color: #72aee6;
+}
+
+.stat-content {
+    flex: 1;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+    color: #1d2327;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #646970;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .aseman-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .aseman-tab-nav {
+        flex-wrap: wrap;
+    }
+    
+    .aseman-tab-btn {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+
+/* RTL Adjustments */
+body.rtl .aseman-stat-card {
+    direction: rtl;
+}
+
+body.rtl .stat-icon {
+    order: 2;
+}
+
+body.rtl .stat-content {
+    order: 1;
+    text-align: right;
+}
+
+body.rtl #test-connection-result {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* Highlight Job */
+.highlight-job {
+    background-color: #fffbcc !important;
+}
+
+/* Loading */
+.aseman-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.aseman-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #2271b1;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: aseman-spin 0.6s linear infinite;
+}
+
+@keyframes aseman-spin {
+    to { transform: rotate(360deg); }
+}
