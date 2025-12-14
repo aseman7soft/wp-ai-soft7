@@ -52,10 +52,10 @@ if (isset($_POST['aseman_robot_generate'])) {
                 echo '<a href="' . esc_url($queue_url) . '">' . esc_html__('View existing job', 'aseman-robot') . '</a>';
                 echo '</p></div>';
             } else {
-                $job_created = self::create_queue_job($topic, $keywords, $category_id, $publish_mode, $schedule_datetime, $interval_minutes, $duplicate_key, $force_generate);
+                $job_created = create_queue_job($topic, $keywords, $category_id, $publish_mode, $schedule_datetime, $interval_minutes, $duplicate_key, $force_generate);
             }
         } else {
-            $job_created = self::create_queue_job($topic, $keywords, $category_id, $publish_mode, $schedule_datetime, $interval_minutes, $duplicate_key, $force_generate);
+            $job_created = create_queue_job($topic, $keywords, $category_id, $publish_mode, $schedule_datetime, $interval_minutes, $duplicate_key, $force_generate);
         }
         
         if (!empty($job_created)) {
